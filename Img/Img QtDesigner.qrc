@@ -1,0 +1,118 @@
+<RCC>
+  <qresource prefix="photo">
+    <file>1767578-real-estate/png/001-advertising.png</file>
+    <file>1767578-real-estate/png/002-agent.png</file>
+    <file>1767578-real-estate/png/003-property.png</file>
+    <file>1767578-real-estate/png/004-insurance.png</file>
+    <file>1767578-real-estate/png/005-agent.png</file>
+    <file>1767578-real-estate/png/006-real estate.png</file>
+    <file>1767578-real-estate/png/007-artboard.png</file>
+    <file>1767578-real-estate/png/008-bank.png</file>
+    <file>1767578-real-estate/png/009-real estate.png</file>
+    <file>1767578-real-estate/png/010-broker.png</file>
+    <file>1767578-real-estate/png/011-home.png</file>
+    <file>1767578-real-estate/png/012-buyer.png</file>
+    <file>1767578-real-estate/png/013-calendar.png</file>
+    <file>1767578-real-estate/png/014-customer support.png</file>
+    <file>1767578-real-estate/png/015-customer support.png</file>
+    <file>1767578-real-estate/png/016-chat.png</file>
+    <file>1767578-real-estate/png/017-shed.png</file>
+    <file>1767578-real-estate/png/018-certified.png</file>
+    <file>1767578-real-estate/png/019-chat.png</file>
+    <file>1767578-real-estate/png/020-chat.png</file>
+    <file>1767578-real-estate/png/021-check list.png</file>
+    <file>1767578-real-estate/png/022-value.png</file>
+    <file>1767578-real-estate/png/023-customer support.png</file>
+    <file>1767578-real-estate/png/024-customer support.png</file>
+    <file>1767578-real-estate/png/025-direction.png</file>
+    <file>1767578-real-estate/png/026-discount.png</file>
+    <file>1767578-real-estate/png/027-discount.png</file>
+    <file>1767578-real-estate/png/028-mortgage.png</file>
+    <file>1767578-real-estate/png/029-document.png</file>
+    <file>1767578-real-estate/png/030-invest.png</file>
+    <file>1767578-real-estate/png/031-loan.png</file>
+    <file>1767578-real-estate/png/032-loan.png</file>
+    <file>1767578-real-estate/png/033-drop.png</file>
+    <file>1767578-real-estate/png/034-contract.png</file>
+    <file>1767578-real-estate/png/035-for sale.png</file>
+    <file>1767578-real-estate/png/036-for sale.png</file>
+    <file>1767578-real-estate/png/037-real estate.png</file>
+    <file>1767578-real-estate/png/038-house.png</file>
+    <file>1767578-real-estate/png/039-piggy bank.png</file>
+    <file>1767578-real-estate/png/040-home.png</file>
+    <file>1767578-real-estate/png/041-security.png</file>
+    <file>1767578-real-estate/png/042-real estate.png</file>
+    <file>1767578-real-estate/png/043-search.png</file>
+    <file>1767578-real-estate/png/044-mortgage.png</file>
+    <file>1767578-real-estate/png/045-invest.png</file>
+    <file>1767578-real-estate/png/046-invest.png</file>
+    <file>1767578-real-estate/png/047-property.png</file>
+    <file>1767578-real-estate/png/048-bill.png</file>
+    <file>1767578-real-estate/png/049-loan.png</file>
+    <file>1767578-real-estate/png/050-location.png</file>
+    <file>1767578-real-estate/png/051-loan.png</file>
+    <file>1767578-real-estate/png/052-location.png</file>
+    <file>1767578-real-estate/png/053-location.png</file>
+    <file>1767578-real-estate/png/054-thought.png</file>
+    <file>1767578-real-estate/png/055-mobile.png</file>
+    <file>1767578-real-estate/png/056-house.png</file>
+    <file>1767578-real-estate/png/057-invest.png</file>
+    <file>1767578-real-estate/png/058-investment.png</file>
+    <file>1767578-real-estate/png/059-navigation.png</file>
+    <file>1767578-real-estate/png/060-network.png</file>
+    <file>1767578-real-estate/png/061-sold.png</file>
+    <file>1767578-real-estate/png/062-value.png</file>
+    <file>1767578-real-estate/png/063-for rent.png</file>
+    <file>1767578-real-estate/png/064-for sale.png</file>
+    <file>1767578-real-estate/png/065-app.png</file>
+    <file>1767578-real-estate/png/066-app.png</file>
+    <file>1767578-real-estate/png/067-search.png</file>
+    <file>1767578-real-estate/png/068-pin.png</file>
+    <file>1767578-real-estate/png/069-planning.png</file>
+    <file>1767578-real-estate/png/070-property.png</file>
+    <file>1767578-real-estate/png/071-property.png</file>
+    <file>1767578-real-estate/png/072-property.png</file>
+    <file>1767578-real-estate/png/073-Valuation.png</file>
+    <file>1767578-real-estate/png/074-house.png</file>
+    <file>1767578-real-estate/png/075-insurance.png</file>
+    <file>1767578-real-estate/png/076-purchase.png</file>
+    <file>1767578-real-estate/png/077-purchase.png</file>
+    <file>1767578-real-estate/png/078-increase.png</file>
+    <file>1767578-real-estate/png/079-invoice.png</file>
+    <file>1767578-real-estate/png/080-house.png</file>
+    <file>1767578-real-estate/png/081-real estate.png</file>
+    <file>1767578-real-estate/png/082-email.png</file>
+    <file>1767578-real-estate/png/083-office.png</file>
+    <file>1767578-real-estate/png/084-home.png</file>
+    <file>1767578-real-estate/png/085-chat.png</file>
+    <file>1767578-real-estate/png/086-value.png</file>
+    <file>1767578-real-estate/png/087-value.png</file>
+    <file>1767578-real-estate/png/088-real estate.png</file>
+    <file>1767578-real-estate/png/089-report.png</file>
+    <file>1767578-real-estate/png/090-graph.png</file>
+    <file>1767578-real-estate/png/091-search.png</file>
+    <file>1767578-real-estate/png/092-home insurance.png</file>
+    <file>1767578-real-estate/png/093-home insurance.png</file>
+    <file>1767578-real-estate/png/094-seller.png</file>
+    <file>1767578-real-estate/png/095-customer service.png</file>
+    <file>1767578-real-estate/png/096-maintenance.png</file>
+    <file>1767578-real-estate/png/097-home.png</file>
+    <file>1767578-real-estate/png/098-box.png</file>
+    <file>1767578-real-estate/png/099-home.png</file>
+    <file>1767578-real-estate/png/100-moving truck.png</file>
+    <file>1767578-real-estate/png/101-sold.png</file>
+    <file>1767578-real-estate/png/102-piggy bank.png</file>
+    <file>1767578-real-estate/png/103-sweet home.png</file>
+    <file>1767578-real-estate/png/104-app.png</file>
+    <file>1767578-real-estate/png/105-smart home.png</file>
+    <file>1767578-real-estate/png/106-customer service.png</file>
+    <file>1767578-real-estate/png/107-user.png</file>
+    <file>1767578-real-estate/png/108-search.png</file>
+    <file>1767578-real-estate/png/109-Valuation.png</file>
+    <file>1767578-real-estate/png/110-value.png</file>
+    <file>1767578-real-estate/png/111-app.png</file>
+    <file>1767578-real-estate/png/112-villa.png</file>
+    <file>1767578-real-estate/png/113-website.png</file>
+    <file>1767578-real-estate/png/114-smart home.png</file>
+  </qresource>
+</RCC>

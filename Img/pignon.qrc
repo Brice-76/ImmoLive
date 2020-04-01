@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>gear-icon-symbol-sign-vector.jpg</file>
+  </qresource>
+</RCC>
