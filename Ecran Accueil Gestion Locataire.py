@@ -8,6 +8,7 @@ import csv
 
 class Gestion_Des_Locataires(QtWidgets.QMainWindow) :
     def __init__(self):
+
         super(Gestion_Des_Locataires, self).__init__()
 
         uic.loadUi('Locataire/Gestion_Des_Locataires.ui', self)
