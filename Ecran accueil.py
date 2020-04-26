@@ -47,12 +47,12 @@ class Ecran_Accueil(QtWidgets.QMainWindow):
                 str+=liste[i]
         self.identite.setText(str)
         fichier.close()
-
-
-
-
-
         self.show()
+
+
+
+
+
 
     def ButtonPressed_Locataire(self):
         print('push Locataire')

@@ -35,9 +35,7 @@ class Fiche_Locataire(QtWidgets.QDialog) :
         self.__date=self.findChild(QtWidgets.QDateEdit,'dateEdit')
         self.__obs=self.findChild(QtWidgets.QTextEdit,'Obsevations')
 
-        self.__bar=self.findChild(QtWidgets.QProgressBar,'progressBar')
-        self.__bar.setMaximum(3)
-        self.__bar.setValue(3)
+
 
 
 
