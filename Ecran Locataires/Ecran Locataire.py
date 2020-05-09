@@ -2,8 +2,6 @@ from PyQt5 import QtWidgets, uic, QtGui, QtCore
 from PyQt5 import *
 import sys
 import os
-import smtplib
-from email.message import EmailMessage
 from Service_Mail import *
 class Gestion_Des_Locataires(QtWidgets.QMainWindow) :
     def __init__(self):
@@ -27,15 +25,11 @@ class Gestion_Des_Locataires(QtWidgets.QMainWindow) :
             self.__liste.setItemWidget(item,itemwidget)
             itemwidget.image.setPixmap(QtGui.QPixmap('/Users/brice/PycharmProjects/ImmoLive/Img/276132-real-estate/png/house-12.png'))
             itemwidget.button.setIcon(QtGui.QIcon('/Users/brice/PycharmProjects/ImmoLive/Img/276132-real-estate/png/phone-call.png'))
-
-
         self.show()
-
 
 class Ui_Form(QtWidgets.QWidget):
     def __init__(self, parent=None ):
         super(QtWidgets.QWidget,self).__init__(parent)
-
         self.widget = QtWidgets.QWidget()
         self.widget.setGeometry(QtCore.QRect(10, 10, 581, 91))
         self.widget.setObjectName("widget")
@@ -101,10 +95,14 @@ class Ui_Form(QtWidgets.QWidget):
         print('ok')
         window = Service_mail()
         window.exec()
+
+
+
+
+
 if __name__ == '__main__':
 
 
-# prog principal
     app = QtWidgets.QApplication(sys.argv)
     window = Gestion_Des_Locataires()
     app.exec_()
