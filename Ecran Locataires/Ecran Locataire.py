@@ -2,34 +2,72 @@ from PyQt5 import QtWidgets, uic, QtGui, QtCore
 from PyQt5 import *
 import sys
 import os
+from os import walk
+import csv
 from Service_Mail import *
 class Gestion_Des_Locataires(QtWidgets.QMainWindow) :
     def __init__(self):
         super(Gestion_Des_Locataires, self).__init__()
 
-        uic.loadUi('/Users/brice/PycharmProjects/ImmoLive/Ecran Locataires/Ecran Locataires.ui', self)
+
+        uic.loadUi('../Ecran Locataires/Ecran Locataires.ui', self)
         self.setFixedSize(1280,720)
         self.__ecran=self.findChild(QtWidgets.QLabel,'label')
-        self.__ecran.setPixmap(QtGui.QPixmap('/Users/brice/PycharmProjects/ImmoLive/Ecran Locataires/Copie de Logic Immo.png'))
+        self.__ecran.setPixmap(QtGui.QPixmap('../Ecran Locataires/Copie de Logic Immo.png'))
 
         self.__liste=self.findChild(QtWidgets.QListWidget,'listWidget')
+        self.__liste.itemClicked.connect(self.Clicked_Item)
+        self.__liste.itemDoubleClicked.connect(self.Double_Clicked_Item)
+        self.__locataire_ordre=[]
 
-        for  i in range (0,10) :
-            item=QtWidgets.QListWidgetItem(self.__liste)
+        # for  i in range (0,10) :
+        #     item=QtWidgets.QListWidgetItem(self.__liste)
+        #
+        #     itemwidget=Ui_Form('brice'+str(i),'chauvat','_','_')
+        #     item.setSizeHint(itemwidget.sizeHint())
+        #     self.__locataire_ordre.append(itemwidget)
+        #     self.__liste.addItem(item)
+        #     self.__liste.setItemWidget(item,itemwidget)
+        #     itemwidget.image.setPixmap(QtGui.QPixmap('/Users/brice/PycharmProjects/ImmoLive/Img/276132-real-estate/png/house-12.png'))
+        #     itemwidget.button.setIcon(QtGui.QIcon('/Users/brice/PycharmProjects/ImmoLive/Img/276132-real-estate/png/phone-call.png'))
 
-            itemwidget=Ui_Form()
-            item.setSizeHint(itemwidget.sizeHint())
-
-
-            self.__liste.addItem(item)
-            self.__liste.setItemWidget(item,itemwidget)
-            itemwidget.image.setPixmap(QtGui.QPixmap('/Users/brice/PycharmProjects/ImmoLive/Img/276132-real-estate/png/house-12.png'))
-            itemwidget.button.setIcon(QtGui.QIcon('/Users/brice/PycharmProjects/ImmoLive/Img/276132-real-estate/png/phone-call.png'))
         self.show()
+        print(self.__locataire_ordre)
+        a=os.listdir('../Locataire/Liste de Locataire')
+        for i in a :
+            with open('../Locataire/Liste de Locataire/'+i, newline='') as f :
+                reader = csv.reader(f)
+                for row in reader:
+                    item=QtWidgets.QListWidgetItem(self.__liste)
+
+                    itemwidget=Ui_Form('brice'+str(i),'chauvat','adresse1','adresse2')
+                    item.setSizeHint(itemwidget.sizeHint())
+                    self.__locataire_ordre.append(itemwidget)
+                    self.__liste.addItem(item)
+                    self.__liste.setItemWidget(item,itemwidget)
+                    itemwidget.image.setPixmap(QtGui.QPixmap('/Users/brice/PycharmProjects/ImmoLive/Img/276132-real-estate/png/house-12.png'))
+                    itemwidget.button.setIcon(QtGui.QIcon('/Users/brice/PycharmProjects/ImmoLive/Img/276132-real-estate/png/phone-call.png'))
+
+
+
+
+
+    def Clicked_Item(self) :
+        print('clicked')
+        a=self.__liste.currentRow()
+        print(self.__locataire_ordre[a].get_prenom())
+    def Double_Clicked_Item(self):
+        print('double clicked')
+
+
 
 class Ui_Form(QtWidgets.QWidget):
-    def __init__(self, parent=None ):
+    def __init__(self,nom,prenom,adresse1,adresse2, parent=None):
         super(QtWidgets.QWidget,self).__init__(parent)
+        self.__nom=nom
+        self.__prenom=prenom
+        self.__adresse1=adresse1
+        self.__adresse2=adresse2
         self.widget = QtWidgets.QWidget()
         self.widget.setGeometry(QtCore.QRect(10, 10, 581, 91))
         self.widget.setObjectName("widget")
@@ -81,10 +119,10 @@ class Ui_Form(QtWidgets.QWidget):
         QtCore.QMetaObject.connectSlotsByName(self)
         _translate = QtCore.QCoreApplication.translate
         self.setWindowTitle(_translate("Form", "Form"))
-        self.label.setText(_translate("Form", "Brice CHAUVAT"))
+        self.label.setText(_translate("Form", str(self.__nom)+' '+str(self.__prenom)))
         self.label_2.setText(_translate("Form", "Adresse"))
-        self.label_4.setText(_translate("Form", "76550 Saint Aubin Sur Scie"))
-        self.label_3.setText(_translate("Form", "474 rue de l\'étoile"))
+        self.label_4.setText(_translate("Form", str(self.__adresse1)))
+        self.label_3.setText(_translate("Form", str(self.__adresse2)))
         self.pushButton.setText(_translate("Form", "Contacter"))
         self.setLayout(self.gridLayout)
         self.image=self.findChild(QtWidgets.QLabel,'label_5')
@@ -95,6 +133,8 @@ class Ui_Form(QtWidgets.QWidget):
         print('ok')
         window = Service_mail()
         window.exec()
+    def get_prenom(self):
+        return self.__nom
 
 
 
